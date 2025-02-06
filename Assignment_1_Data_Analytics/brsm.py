@@ -4,13 +4,6 @@ from scipy.optimize import linear_sum_assignment
 from scipy.stats import wilcoxon
 import matplotlib.pyplot as plt
 
-# Ensure required packages are installed
-try:
-    import micropip
-    await micropip.install(["numpy", "pandas", "scipy", "matplotlib"])
-except ImportError:
-    pass  # micropip is not available in all environments
-
 # Step 1: Simulate Patient Data
 np.random.seed(42)
 n_patients = 400
